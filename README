@@ -1,0 +1,14 @@
+This is a MS Copilot rough draft.
+
+Known issues:
+	Hooks.php does not have all the needed parts.
+	Some of the processing looks to be hallucinations
+	Has it's own db code instead of using FA calls
+	Code can be refactored so that internal related stuff uses internal
+		*vendor lookup
+		*creating purchase orders and payments.
+
+This could also be integrated with the Bank Import code.  These receipts should
+match the bank transactions.  the Bank Import code could look for existing uploaded
+receipts.  This module could "stage" the POs, payments.  Or, this module creates the
+vendor POs, Bank Import matches and creates the Vendor Payment.

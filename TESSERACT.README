@@ -1,0 +1,5 @@
+docker pull remnux/tesseract
+
+docker run -d -p 5000:5000 remnux/tesseract
+
+
